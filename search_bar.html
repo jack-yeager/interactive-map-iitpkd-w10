@@ -1,1 +1,38 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Bar</title>
+  <script>
+    function search() {
+      var query = document.getElementById("query").value.toLowerCase();
+      var queryFiles = {
+        'food': 'food places.html',
+        'restarunt': 'food places.html',
+        'food places': 'food places.html',
+        'hotel': 'food places.html',
+        'hotels': 'food places.html',
+        'foods': 'food places.html',
+        "eating location": 'food places.html',
+        "all": 'map.html'
+        
+        
+        
+        // Add more queries and corresponding files as needed
+      };
+      
+      if (query in queryFiles) {
+        var htmlFile = queryFiles[query];
+        window.location.href = htmlFile;
+      } else {
+        console.log("Locations not found.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>LOCATION SEARCHER : Search anything located in Ahalia.</h1>
+  <input type="text" id="query" placeholder="Enter your search location">
+  <button onclick="search()">Search</button>
+  <p>To access full map type "all" in the search bar.</p>
+</body>
+</html>
