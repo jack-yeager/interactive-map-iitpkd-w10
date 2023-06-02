@@ -11,4 +11,4 @@ popup_afp= folium.Popup(iframe_afp,max_width=640)
 ricon_afp= folium.features.CustomIcon('hosp.png',icon_size=(40,40))
 folium.Marker(location=[10.79225910098684, 76.82801481185315],tooltip="<strong>Ahalia Food point</strong>",popup=popup_afp,icon=ricon_afp).add_to(map) 
 
-map.save("adh.html")
+map.save("afp.html")
