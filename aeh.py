@@ -11,4 +11,4 @@ popup_aeh= folium.Popup(iframe_aeh,max_width=640)
 ricon_aeh= folium.features.CustomIcon('hosp.png',icon_size=(40,40))
 folium.Marker(location=[10.794002645395077, 76.82705190698024],tooltip="<strong>Ahalia Eye Hospital</strong>",popup=popup_aeh,icon=ricon_aeh).add_to(map) 
 
-map.save("adh.html")
+map.save("aeh.html")
