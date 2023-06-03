@@ -6,6 +6,7 @@
     function search() {
       var query = document.getElementById("query").value.toLowerCase();
       var queryFiles = {
+        
         'food': 'food places.html',
         'restarunt': 'food places.html',
         'food places': 'food places.html',
@@ -13,18 +14,91 @@
         'hotels': 'food places.html',
         'foods': 'food places.html',
         "eating location": 'food places.html',
-        "all": 'map.html'
+        "all": 'map.html',
+        "taste of malabar": "tom.html",
+        "tom": "tom.html",
+        "t o m": "tom.html",
+        "cafe":"food places.html",
+        "football ground": 'afb.html',
+        "football court": 'afb.html',
+        "ahalia football ground": 'afb.html',
+        "ahalia football court": 'afb.html',
+        "home centre": 'ahc.html',
+        "ahalia home centre": "ahc.html",
+        "sculpture park":"sculp.html",
+        "ahalia sculpture park":"sculp.html",
+        "cdc": "cdc.html",
+        "cafe coffee day": "cdc.html",
+        "adh":"adh.html",
+        "ahalia diabetic hospital":"adh.html",
+        "diabetic hospital":"adh.html",
+        "ayurvedha hospital": "ayur.html",
+        "ahalia ayurvedha hospital":"ayur.html",
+        'academic block':'acad.html',
+        'iit academic block':'acad.html',
+        'acad block': 'acad.html',
+        'iit acad block': 'acad.html',
+        'basketball ground': 'bb.html',
+        'basketball court': 'bb.html',
+        'basketball':'bb.html',
+        'canara bank atm': 'canara.html',
+        'atm': 'canara.html',
+        'canara bank': 'canara.html',
+        'canara':'canara.html',
+        'bank':'canara.html',
+        'hostel1':"h1.html",
+        'hostel 1':'h1.html',
+        'h1': 'h1.html',
+        'h 1': "h1.html",
+        'hostel2':"h2.html",
+        'hostel 2':'h2.html',
+        'h2': 'h2.html',
+        'h 2': "h2.html",
+        'hostel3':"h3.html",
+        'hostel 3':'h3.html',
+        'h3': 'h3.html',
+        'h 3': "h3.html",
+        'lake': 'lake.html',
+        "manju's canteen":'manju.html',
+        'manju':'manju.html',
+        'mba block':"mba.html",
+        'mba':'mba.html',
+        'ahalia pharmacy block':'pharm.html',
+        'pharmacy block':'pharm.html',
+        'pharmacy':'adh.html',
+        'sculpture park':'sculp.html',
+        'ahalia sculpture park':'sculp.html',
+        'statue':'statue.html',
+        'ahalia statue':'statue.html',
+        'volleyball court':'volleyball.html',
+        'volleyball ground':'volleyball.html',
+        'shop':'grocery.html',
+        'grocery':'grocery.html',
+        'park':'park.html',
+        'sight seeing':'park.html',
+        'spots':'park.html',
+        'sports':'sport.html',
+        'playground':'sport.html',
+        'field':'sport.html',
+        'hospital':'hopital.html',
+        'clinic':'hopital.html',
+        'study places':'study.html',
+        'study':'study.html',
+        'places to study':'study.html',
+        'academics':'study.html',
+        'hostel':'hostel.html',
+        'hostels':'hostel.html',
+        'parks':'park.html',
+        'recreational areas':'park.html'
         
-        
-        
-        // Add more queries and corresponding files as needed
       };
       
       if (query in queryFiles) {
         var htmlFile = queryFiles[query];
         window.location.href = htmlFile;
       } else {
-        console.log("Locations not found.");
+        var htmlFile = "error.html";
+        window.location.href = htmlFile;
       }
     }
   </script>
