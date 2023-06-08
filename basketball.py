@@ -15,3 +15,4 @@ folium.Marker(location=[10.802793275868506, 76.81854055985796],
               tooltip="<strong>Basketball Court</strong>", popup=popup_bk, icon=ricon_bk).add_to(map)
 
 map.save("bb.html")
+
