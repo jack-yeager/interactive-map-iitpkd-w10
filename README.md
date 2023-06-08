@@ -12,7 +12,7 @@ Our project, Interactive Map, enables its user to search locations of different 
 - [@jack-yeager](https://github.com/jack-yeager)
 
 
-## Installation
+# Installation
 
 Install Map leaflets using:
 
