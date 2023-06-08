@@ -2,14 +2,16 @@ import folium
 from folium import IFrame
 import base64
 
-map= folium.Map(location=[10.803489489100986, 76.81870306540125],zoom_start=15)#opens the map
+map = folium.Map(location=[10.796019890314097,
+                 76.82275843702458], zoom_start=16)
 
-html= '<img src= "data:image/png;base64,{}">'.format#formating all image files to be added for html
+html = '<img src= "data:image/png;base64,{}">'.format
 
-#for location 1: Taste of malabar
-picture_mba= base64.b64encode(open(,'rb').read()).decode()#encoding and decoding the image filr
-iframe_mba= IFrame(html(picture_mba),width=327+20,height=160+20)#IFrame used to add picture in popup
-popup_mba= folium.Popup(iframe_mba,max_width=650)
-ricon_mba= folium.features.CustomIcon('img.png',icon_size=(40,40))#customized food icon
-folium.Marker(location=[10.799290457287118, 76.82241465360843],tooltip="<strong>MBA Block</strong>",popup=popup_mba,icon=ricon_mba).add_to(map)#for displaying everything in the given icon
+picture_mba = base64.b64encode(open('mba.jpg', 'rb').read()).decode()
+iframe_mba = IFrame(html(picture_mba), width=327+20, height=245+20)
+popup_mba = folium.Popup(iframe_mba, max_width=650)
+ricon_mba = folium.features.CustomIcon('lib.png', icon_size=(40, 60))
+folium.Marker(location=[10.799334989848212, 76.82103835492995],
+              tooltip="<strong>MBA Block</strong>", popup=popup_mba, icon=ricon_mba).add_to(map)
+
 map.save("mba.html")
