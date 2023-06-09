@@ -22,7 +22,7 @@ Install Map leaflets using:
 ```
 Install base64 for encoding and decoding ASCII characters:
 ```bash
-  pip install folium 
+  pip install base64
 
 ```
 
