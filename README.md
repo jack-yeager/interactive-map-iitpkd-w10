@@ -47,7 +47,7 @@ Jakadeer.V([@jack-yeager](https://github.com/jack-yeager)):\
 a. Wrote the code for search bar \
 b.  Combined other codes to create the application. \
 \
-M.Yashwant([@mummidiyaswant](https://github.com/mummidiyaswant)):\
+M.Yaswant([@mummidiyaswant](https://github.com/mummidiyaswant)):\
 a. Created html files  \
 b. Wrote codes for locations\
 \
